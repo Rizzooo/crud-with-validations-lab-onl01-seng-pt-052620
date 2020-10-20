@@ -1,0 +1,20 @@
+<%= form_for(@song) do |s| %>
+    <label> Title: </label>
+    <%= s.text_field :title %><br>
+
+    <label> Released: </label>
+    <%= s.check_box :released%><br>
+
+    <label> Release Year: </label>
+    <%= s.number_field :release_year%><br>
+
+    <label> Artist Name: </label>
+    <%= s.text_field :artist_name%><br>
+
+    <label> Genre: </label>
+    <%= s.text_field :genre%><br>
+
+    <%= s.submit %>
+<% end %>
+
+# "render 'form'" in other views
